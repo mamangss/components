@@ -1,0 +1,48 @@
+.blinkSomeOnHover {
+	cursor: pointer;
+	display: flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&:hover {
+		.blinkChar-0 {
+			animation: blink .5s ease;
+		}
+		.blinkChar-1 {
+			animation: blink .5s ease .1s;
+		}
+		.blinkChar-2 {
+			animation: blink .5s ease .2s;
+		}
+		.blinkChar-3 {
+			animation: blink .5s ease .3s;
+		}
+	}
+
+	span:not(.space) {
+		display: inline-block;
+	}
+}
+
+@keyframes blink {
+	0% { 
+		opacity: 1;
+		transform: translateY(0);
+	}
+	25% { 
+		opacity: 0;
+		transform: translateY(2px);
+	}
+	50% { 
+		opacity: 1;
+		transform: translateY(0);
+	}
+	75% { 
+		opacity: 0;
+		transform: translateY(2px);
+	}
+	100% { 
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

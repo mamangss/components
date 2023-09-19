@@ -1,5 +1,6 @@
 import { RollOnHover } from './components/RollOnHover';
 import styles from './App.module.scss';
+import { BlinkSomeOnHover } from './components/BlinkSomeOnHover';
 
 const App = () => {
 	
@@ -8,6 +9,10 @@ const App = () => {
 			<RollOnHover>
 				Roll On Hover
 			</RollOnHover>
+
+			<BlinkSomeOnHover
+				text={'Blink Some On Hover'}
+			/>
 		</div>
 	);
 }
