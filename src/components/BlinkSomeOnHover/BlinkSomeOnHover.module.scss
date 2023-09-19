@@ -1,8 +1,6 @@
 .blinkSomeOnHover {
 	cursor: pointer;
-	display: flexbox;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: inline-block;
 
 	&:hover {
 		.blinkChar-0 {
