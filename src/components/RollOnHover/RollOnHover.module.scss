@@ -1,0 +1,18 @@
+.rollOnHover {
+	cursor: pointer;
+	position: relative;
+	overflow-y: hidden;
+	display: inline-block;
+
+	&:hover {
+		.content {
+			transform: translateY(0);
+			transition: transform .75s ease;
+		}
+	}
+
+	.content {
+		transform: translateY(-100%);
+		transition: transform 0s;
+	}
+}
