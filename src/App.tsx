@@ -1,6 +1,8 @@
 import { RollOnHover } from './components/RollOnHover';
 import styles from './App.module.scss';
 import { BlinkSomeOnHover } from './components/BlinkSomeOnHover';
+import { FlashlightImageOnHover } from './components/FashlightImageOnHover';
+import dummyImg from './assets/images/dummy.jpg';
 
 const App = () => {
 	
@@ -12,6 +14,10 @@ const App = () => {
 
 			<BlinkSomeOnHover
 				text={'Blink Some On Hover'}
+			/>
+
+			<FlashlightImageOnHover 
+				imageUrl={dummyImg}
 			/>
 		</div>
 	);
