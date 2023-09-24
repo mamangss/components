@@ -1,0 +1,41 @@
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	z-index: 1;
+
+	.item {
+		padding: 8px;
+		position: relative;
+		z-index: 1;
+		
+		.content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.bgSensor {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: transparent;
+			z-index: 3;
+		}
+
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: auto;
+			width: 100%;
+			height: 100%;
+			background-color: #B2BEB5;
+			z-index: 1;
+			// transition: all .15s linear;
+			transition: all .25s linear;
+		}
+	}
+}

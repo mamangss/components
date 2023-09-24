@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 import { BlinkSomeOnHover } from './components/BlinkSomeOnHover';
 import { FlashlightImageOnHover } from './components/FashlightImageOnHover';
 import dummyImg from './assets/images/dummy.jpg';
+import { FollowCursorOnHover } from './components/FollowCursorOnHover';
 
 const App = () => {
 	
@@ -18,6 +19,10 @@ const App = () => {
 
 			<FlashlightImageOnHover 
 				imageUrl={dummyImg}
+			/>
+
+			<FollowCursorOnHover 
+				list={['Follow', 'Cursor', 'On', 'Hover']}
 			/>
 		</div>
 	);
