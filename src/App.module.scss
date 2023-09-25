@@ -1,6 +1,11 @@
 .app {
 	padding: 40px;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+
+	.viewerList {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }

@@ -4,26 +4,39 @@ import { BlinkSomeOnHover } from './components/BlinkSomeOnHover';
 import { FlashlightImageOnHover } from './components/FashlightImageOnHover';
 import dummyImg from './assets/images/dummy.jpg';
 import { FollowCursorOnHover } from './components/FollowCursorOnHover';
+import { Viewer } from './components/Viewer';
 
 const App = () => {
 	
 	return (
 		<div className={styles.app}>
-			<RollOnHover>
-				Roll On Hover
-			</RollOnHover>
 
-			<BlinkSomeOnHover
-				text={'Blink Some On Hover'}
-			/>
+			<div className={styles.viewerList}>
+				<Viewer>
+					<RollOnHover>
+						Roll On Hover
+					</RollOnHover>
+				</Viewer>
 
-			<FlashlightImageOnHover 
-				imageUrl={dummyImg}
-			/>
+				<Viewer>
+					<BlinkSomeOnHover
+						text={'Blink Some On Hover'}
+					/>
+				</Viewer>
 
-			<FollowCursorOnHover 
-				list={['Follow', 'Cursor', 'On', 'Hover']}
-			/>
+				<Viewer>
+					<FlashlightImageOnHover 
+						imageUrl={dummyImg}
+					/>
+				</Viewer>
+
+				<Viewer>
+					<FollowCursorOnHover 
+						list={['Follow', 'Cursor', 'On', 'Hover']}
+					/>
+				</Viewer>
+			</div>
+			
 		</div>
 	);
 }
