@@ -1,0 +1,14 @@
+.highlightParagraphOnScroll {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+	.paragraph {
+		.char {
+			&.highlight {
+				background-color: #FF0000;
+			}
+		}
+	}
+}

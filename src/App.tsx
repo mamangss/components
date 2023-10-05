@@ -5,6 +5,7 @@ import { FlashlightImageOnHover } from './components/FashlightImageOnHover';
 import dummyImg from './assets/images/dummy.jpg';
 import { FollowCursorOnHover } from './components/FollowCursorOnHover';
 import { Viewer } from './components/Viewer';
+import { HighlightParagraphOnScroll } from './components/HighlightParagraphOnScroll';
 
 const App = () => {
 	
@@ -35,8 +36,17 @@ const App = () => {
 						list={['Follow', 'Cursor', 'On', 'Hover']}
 					/>
 				</Viewer>
+
+				<Viewer>
+					<HighlightParagraphOnScroll
+						// paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis mi mauris, eu venenatis erat fermentum vel. Maecenas dolor ex, porttitor vitae dignissim sed, auctor ut ligula.'
+						paragraph='Highlight Paragraph On Scroll. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis mi mauris, eu venenatis erat fermentum vel.'
+						readerLineOffsetHeight={150}
+						paragraphClassName={styles.hposParagraph}
+					/>
+				</Viewer>
 			</div>
-			
+
 		</div>
 	);
 }
