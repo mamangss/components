@@ -7,6 +7,7 @@ import { FollowCursorOnHover } from './components/FollowCursorOnHover';
 import { Viewer } from './components/Viewer';
 import { HighlightParagraphOnScroll } from './components/HighlightParagraphOnScroll';
 import { HorizontalScrollingUsingVerticalScroll } from './components/HorizontalScrollingUsingVerticalScroll';
+import { RandomCharOnHover } from './components/RandomCharOnHover';
 
 const App = () => {
 	
@@ -56,6 +57,10 @@ const App = () => {
 							))}
 						</div>
 					</HorizontalScrollingUsingVerticalScroll>
+				</Viewer>
+
+				<Viewer>
+					<RandomCharOnHover text='RANDOM CHAR ON HOVER' />
 				</Viewer>
 			</div>
 
