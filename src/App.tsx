@@ -6,6 +6,7 @@ import dummyImg from './assets/images/dummy.jpg';
 import { FollowCursorOnHover } from './components/FollowCursorOnHover';
 import { Viewer } from './components/Viewer';
 import { HighlightParagraphOnScroll } from './components/HighlightParagraphOnScroll';
+import { HorizontalScrollingUsingVerticalScroll } from './components/HorizontalScrollingUsingVerticalScroll';
 
 const App = () => {
 	
@@ -39,11 +40,22 @@ const App = () => {
 
 				<Viewer>
 					<HighlightParagraphOnScroll
-						// paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis mi mauris, eu venenatis erat fermentum vel. Maecenas dolor ex, porttitor vitae dignissim sed, auctor ut ligula.'
 						paragraph='Highlight Paragraph On Scroll. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis mi mauris, eu venenatis erat fermentum vel.'
 						readerLineOffsetHeight={150}
 						paragraphClassName={styles.hposParagraph}
 					/>
+				</Viewer>
+
+				<Viewer className={styles.hsuvsViewer}>
+					<HorizontalScrollingUsingVerticalScroll>
+						<div className={styles.hsuvsList}>
+							{Array.from({ length: 10 }).map((_, key) => (
+								<div className={styles.hsuvsItem} key={key}>
+									Horizontal Scrolling Using Vertical Scroll
+								</div>
+							))}
+						</div>
+					</HorizontalScrollingUsingVerticalScroll>
 				</Viewer>
 			</div>
 
